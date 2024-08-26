@@ -20,7 +20,7 @@ export default function Profiles() {
     }
 
     function onSetChosenProfile(profile, setVoiceFile) {
-        setVoiceFile(`/audio/voice/Profiles/${profile}.mp3`)
+        setVoiceFile(`${import.meta.env.BASE_URL}audio/voice/Profiles/${profile}.mp3`)
         setChosenProfile(profile);
     }
 
@@ -48,7 +48,7 @@ export default function Profiles() {
             <div className={"map-section"}>
                 <img
                     className={"map"}
-                    src={"/image/Profiles/map.webp"}>
+                    src={`${import.meta.env.BASE_URL}image/Profiles/map.webp`}>
                 </img>
                 <LinkButton profile={"Itch.io"} chosenProfile={chosenProfile} top={"40%"} left={"37.66%"} onSetChosenProfile={onSetChosenProfile}></LinkButton>
                 <LinkButton profile={"Linkedin"} chosenProfile={chosenProfile} top={"66%"} left={"66%"} onSetChosenProfile={onSetChosenProfile}></LinkButton>

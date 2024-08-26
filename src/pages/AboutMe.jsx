@@ -13,7 +13,7 @@ export default function AboutMe() {
     const [chosenClass, setChosenClass] = useState("");
 
     function onSetChosenClass(heroClass, setVoiceFile) {
-        setVoiceFile(`/audio/voice/AboutMe/${heroClass}.mp3`)
+        setVoiceFile(`${import.meta.env.BASE_URL}audio/voice/AboutMe/${heroClass}.mp3`)
         setChosenClass(heroClass);
     }
 

@@ -10,7 +10,7 @@ export default function SkillButton({ chosenSkill, heroClass, skillNumber, onSet
         <img 
             draggable={false}
             className={chosenSkill === skillNumber ? 'chosen' : 'unchosen'} 
-            src={`/image/${heroClass}/${skillNumber}.webp`}
+            src={`${import.meta.env.BASE_URL}image/${heroClass}/${skillNumber}.webp`}
             onClick={chosenSkill === skillNumber ? () => onSetChosenSkill("", sfxVolume) : () => onSetChosenSkill(skillNumber, sfxVolume)}>
         </img>
     )

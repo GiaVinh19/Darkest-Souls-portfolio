@@ -33,8 +33,8 @@ export default function NavButton({ titleName, link }) {
         <NavLink
             className={"nav-link"}
             to={link}
-            onClick={() => playSelectAudio('/audio/sfx/NavButton/select-confirm.mp3', sfxVolume)}
-            onMouseEnter={!isTouchDevice ? () => playSelectAudio('/audio/sfx/NavButton/select-hover.mp3', sfxVolume) : null}>
+            onClick={() => playSelectAudio(`${import.meta.env.BASE_URL}audio/sfx/NavButton/select-confirm.mp3`, sfxVolume)}
+            onMouseEnter={!isTouchDevice ? () => playSelectAudio(`${import.meta.env.BASE_URL}audio/sfx/NavButton/select-hover.mp3`, sfxVolume) : null}>
             {titleName}
         </NavLink>
     )

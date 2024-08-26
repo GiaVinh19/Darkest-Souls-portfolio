@@ -31,7 +31,7 @@ export default function NavLinkButton({ titleName, link }) {
 
     function handleLinkClick(event, link) {
         event.preventDefault();
-        playSelectAudio('/audio/sfx/NavButton/select-confirm.mp3', sfxVolume);
+        playSelectAudio(`${import.meta.env.BASE_URL}audio/sfx/NavButton/select-confirm.mp3`, sfxVolume);
         window.open(link || '_blank');
     }
 
@@ -39,7 +39,7 @@ export default function NavLinkButton({ titleName, link }) {
         <NavLink
             className={"nav-link"}
             onClick={(event) => handleLinkClick(event, link)}
-            onMouseEnter={!isTouchDevice ? () => playSelectAudio('/audio/sfx/NavButton/select-hover.mp3', sfxVolume) : null}>
+            onMouseEnter={!isTouchDevice ? () => playSelectAudio(`${import.meta.env.BASE_URL}audio/sfx/NavButton/select-hover.mp3`, sfxVolume) : null}>
             {titleName}
         </NavLink>
     )

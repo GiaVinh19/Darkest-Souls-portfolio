@@ -22,13 +22,13 @@ export default function Options() {
     }
 
     function playSfxOnChange() {
-        const audio = new Audio("/audio/sfx/NavButton/select-confirm.mp3");
+        const audio = new Audio(`${import.meta.env.BASE_URL}audio/sfx/NavButton/select-confirm.mp3`);
         audio.volume = sfxVolume;
         audio.play();
     }
 
     function playVoiceOnChange() {
-        setVoiceFile(`/audio/voice/Options/Options.mp3`);
+        setVoiceFile(`${import.meta.env.BASE_URL}audio/voice/Options/Options.mp3`);
     }
 
     function onSetMusicFile(event) {

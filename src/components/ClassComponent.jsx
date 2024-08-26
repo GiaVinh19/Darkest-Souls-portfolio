@@ -11,7 +11,7 @@ export default function ClassComponent({ heroClass, chosenClass, onSetChosenClas
             <div className={"context-container"}>
                 <img 
                     className={"context-image"}
-                    src = {"/image/AboutMe/context.webp"}>
+                    src = {`${import.meta.env.BASE_URL}image/AboutMe/context.webp`}>
                 </img>
                 <div className={"context-box"}>
                     {`${classDescription[heroClass]}`}
@@ -24,7 +24,7 @@ export default function ClassComponent({ heroClass, chosenClass, onSetChosenClas
                 draggable={"false"}
                 className={`class-image ${chosenClass === heroClass ? 'chosen' : 'unchosen'} `}
                 onClick={chosenClass === heroClass ? () => {} : () => onSetChosenClass(heroClass, setVoiceFile)}
-                src={`/image/AboutMe/${heroClass}.webp`}>
+                src={`${import.meta.env.BASE_URL}image/AboutMe/${heroClass}.webp`}>
             </img>
         </div>
     )

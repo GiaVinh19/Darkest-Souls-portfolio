@@ -9,7 +9,7 @@ export default function CharacterSheet({ heroClass, skill01, skill02, skill03, s
     function onSetChosenSkill(skill, sfxVolume) {
         setChosenSkill(skill);
         if (skill != "") {
-            const audio = new Audio(`/audio/sfx/${heroClass}/${skill}.mp3`);
+            const audio = new Audio(`${import.meta.env.BASE_URL}audio/sfx/${heroClass}/${skill}.mp3`);
             audio.volume = sfxVolume
             audio.play()
         }
@@ -27,7 +27,7 @@ export default function CharacterSheet({ heroClass, skill01, skill02, skill03, s
                     <video
                         className="character-portrait"
                         draggable="false"
-                        src={`/image/${heroClass}/${chosenSkill}.webm`}
+                        src={`${import.meta.env.BASE_URL}image/${heroClass}/${chosenSkill}.webm`}
                         autoPlay
                         preload="auto"
                         loop

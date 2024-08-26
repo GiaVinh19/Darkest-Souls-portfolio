@@ -10,7 +10,7 @@ export default function LinkButton( {top, left, chosenProfile, profile, onSetCho
     <img
         className={`link-button ${chosenProfile === profile ? 'chosen' : 'unchosen'} `}
         // className={"link-button"} 
-        src={`/image/Profiles/${profile}.webp`}
+        src={`${import.meta.env.BASE_URL}image/Profiles/${profile}.webp`}
         style={{
             top : top,
             left : left
