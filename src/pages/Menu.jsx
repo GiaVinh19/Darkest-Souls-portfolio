@@ -36,7 +36,6 @@ export default function Menu() {
                     <li>{getMusicTitle(musicFile)}</li>
                 </ul>
                 <img className={"menu-title"} src={`${import.meta.env.BASE_URL}image/Menu/menu-title.webp`} />
-                {/* <img className={"menu-title"} src="/image/Menu/menu-title.webp" /> */}
                 <div className={`menu-start ${menuOpen ? 'open' : 'close'}`}>
                     <p onClick={() => openMenuSelect()}>Click Here to Start</p>
                 </div>

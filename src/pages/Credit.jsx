@@ -23,7 +23,7 @@ export default function Credit() {
                 </ul>
             </ul>
             <ul className={"credit-return"}>
-                <NavButton titleName={"◀ Main Menu"} link={"/"}></NavButton>
+                <NavButton titleName={"◀ Main Menu"} link={`${import.meta.env.BASE_URL}`}></NavButton>
                 <div></div>
                 <div></div>
             </ul>

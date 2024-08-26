@@ -48,7 +48,7 @@ export default function CharacterSheet({ heroClass, skill01, skill02, skill03, s
                 </div>
             </div>
             <ul className={"character-return"}>
-                <NavButton titleName={"◀ About Me"} link={"/about-me"}></NavButton>
+                <NavButton titleName={"◀ About Me"} link={`${import.meta.env.BASE_URL}about-me`}></NavButton>
                 <div></div>
                 <div></div>
             </ul>

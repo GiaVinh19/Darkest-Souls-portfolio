@@ -47,7 +47,7 @@ export default function Options() {
                 <Slider sliderType={"Voice Volume"} initialVolume={voiceVolume} value={voiceVolume} onChange={onSetVoiceVolume} onChangeUpdate={playVoiceOnChange}></Slider>
             </ul>
             <ul className={"options-return"}>
-                <NavButton titleName={"◀ Main Menu"} link={"/"}></NavButton>
+                <NavButton titleName={"◀ Main Menu"} link={`${import.meta.env.BASE_URL}`}></NavButton>
                 <div></div>
                 <div></div>
             </ul>

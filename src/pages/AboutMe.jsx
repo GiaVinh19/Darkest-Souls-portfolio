@@ -51,7 +51,7 @@ export default function AboutMe() {
             </div>
 
             <ul className={"arrows"}>
-                <NavButton titleName={"◀ Main Menu"} link={"/"}></NavButton>
+                <NavButton titleName={"◀ Main Menu"} link={`${import.meta.env.BASE_URL}`}></NavButton>
                 <div></div>
                 <NavButton titleName={"Character Sheet ▶"} link={chosenClass}></NavButton>
             </ul>

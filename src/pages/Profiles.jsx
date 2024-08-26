@@ -57,7 +57,7 @@ export default function Profiles() {
                 <LinkButton profile={"Resume"} chosenProfile={chosenProfile} top={"50%"} left={"66.6%"} onSetChosenProfile={onSetChosenProfile}></LinkButton>
             </div>
             <ul className={"profiles-return"}>
-                <NavButton titleName={"◀ Main Menu"} link={"/"}></NavButton>
+                <NavButton titleName={"◀ Main Menu"} link={`${import.meta.env.BASE_URL}`}></NavButton>
                 <div></div>
                 <NavLinkButton titleName={getProfileTitle(chosenProfile)} link={getProfileLink(chosenProfile)}></NavLinkButton>
             </ul>
