@@ -7,10 +7,10 @@ export default function MusicSelector({ onChange }) {
             </span>
             <select name={"music"} className={"music"} onChange={onChange}>
                 <option value="">Select Music</option>
-                <option value={`${import.meta.env.BASE_URL}audio/music/Dark-Reality.mp3`}>Dark Reality</option>
-                <option value={`${import.meta.env.BASE_URL}audio/music/Dark-Souls.mp3`}>Dark Souls</option>
-                <option value={`${import.meta.env.BASE_URL}audio/music/Dark-Wood.mp3`}>Dark Wood</option>
-                <option value={`${import.meta.env.BASE_URL}audio/music/Darkest-Dungeon.mp3`}>Darkest Dungeon</option>
+                <option value={`audio/music/Dark-Reality.mp3`}>Dark Reality</option>
+                <option value={`audio/music/Dark-Souls.mp3`}>Dark Souls</option>
+                <option value={`audio/music/Dark-Wood.mp3`}>Dark Wood</option>
+                <option value={`audio/music/Darkest-Dungeon.mp3`}>Darkest Dungeon</option>
             </select>
         </div>
     )

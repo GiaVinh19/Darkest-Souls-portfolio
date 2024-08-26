@@ -7,25 +7,23 @@ export default function VoicePlayer() {
     const { voiceFile, setVoiceFile, voiceVolume, setPlayVoice } = audio;
 
     const subtitleText = {
-
         "" : "",
-        
+    
         // Options
-        "${import.meta.env.BASE_URL}audio/voice/Options/Options.mp3" : "Salutation.",
-
+        [`${import.meta.env.BASE_URL}audio/voice/Options/Options.mp3`]: "Salutation.",
+    
         // AboutMe
-        "${import.meta.env.BASE_URL}audio/voice/AboutMe/Vindicator.mp3" : "A mighty sword-arm anchored by a holy purpose. A zealous warrior.",
-        "${import.meta.env.BASE_URL}audio/voice/AboutMe/Venator.mp3" : "The thrill of the hunt... The promise of payment...",
-        "${import.meta.env.BASE_URL}audio/voice/AboutMe/Venomancer.mp3" : "What better laboratory than the blood-soaked battlefield?",
-
+        [`${import.meta.env.BASE_URL}audio/voice/AboutMe/Vindicator.mp3`]: "A mighty sword-arm anchored by a holy purpose. A zealous warrior.",
+        [`${import.meta.env.BASE_URL}audio/voice/AboutMe/Venator.mp3`]: "The thrill of the hunt... The promise of payment...",
+        [`${import.meta.env.BASE_URL}audio/voice/AboutMe/Venomancer.mp3`]: "What better laboratory than the blood-soaked battlefield?",
+    
         // Profiles
-        "${import.meta.env.BASE_URL}audio/voice/Profiles/Github.mp3" : "Secrets and wonders can be found in the most tenebrous corners of this place.",
-        "${import.meta.env.BASE_URL}audio/voice/Profiles/Itch.io.mp3" : "Carelessness will find no clemency in this place!",
-        "${import.meta.env.BASE_URL}audio/voice/Profiles/Linkedin.mp3" : "Great heroes can be found even here, in the mud and rain.",
-        "${import.meta.env.BASE_URL}audio/voice/Profiles/Medium.mp3" : "The well-worn seat of our research, still littered with notes, diagrams, and dusty journals.",
-        "${import.meta.env.BASE_URL}audio/voice/Profiles/Resume.mp3" : "A brilliant confluence of skill and purpose!",
-
-    }
+        [`${import.meta.env.BASE_URL}audio/voice/Profiles/Github.mp3`]: "Secrets and wonders can be found in the most tenebrous corners of this place.",
+        [`${import.meta.env.BASE_URL}audio/voice/Profiles/Itch.io.mp3`]: "Carelessness will find no clemency in this place!",
+        [`${import.meta.env.BASE_URL}audio/voice/Profiles/Linkedin.mp3`]: "Great heroes can be found even here, in the mud and rain.",
+        [`${import.meta.env.BASE_URL}audio/voice/Profiles/Medium.mp3`]: "The well-worn seat of our research, still littered with notes, diagrams, and dusty journals.",
+        [`${import.meta.env.BASE_URL}audio/voice/Profiles/Resume.mp3`]: "A brilliant confluence of skill and purpose!",
+    };
 
     // useEffect(() => {
     //     console.log(`voiceFile has changed to: ${voiceFile}`);

@@ -42,7 +42,7 @@ export default function MusicPlayer() {
 
     return (
         <audio ref={audioRef} loop>
-            <source src={musicFile} type={"audio/mp3"} />
+            <source src={`${import.meta.env.BASE_URL}${musicFile}`} type={"audio/mp3"} />
             Thy browser doth not lend its ear to the symphony of sound.
         </audio>
     );
