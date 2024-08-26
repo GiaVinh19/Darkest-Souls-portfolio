@@ -9,7 +9,7 @@ export default function Menu() {
     const { musicFile, setMusicFile, sfxVolume } = audio;
 
     function openMenuSelect() {
-        setMusicFile(`audio/music/Dark-Souls.mp3`)
+        setMusicFile(`${import.meta.env.BASE_URL}audio/music/Dark-Souls.mp3`)
         setMenuOpen(!menuOpen);
         const audio = new Audio(`${import.meta.env.BASE_URL}audio/sfx/Menu/open-menu.mp3`);
         audio.volume = sfxVolume;

@@ -10,39 +10,39 @@ import Credit from "./pages/Credit";
 
 const routes = [
     {
-        path: "/",
+        path: `${import.meta.env.BASE_URL}`,
         element: <Menu></Menu>
     },
     {
-        path: "/about-me",
+        path: `${import.meta.env.BASE_URL}about-me`,
         element: <AboutMe></AboutMe>
     },
     {
-        path: "/about-me/Vindicator",
+        path: `${import.meta.env.BASE_URL}about-me/Vindicator`,
         element: <Vindicator></Vindicator>
     },
     {
-        path: "/about-me/Venomancer",
+        path: `${import.meta.env.BASE_URL}about-me/Venomancer`,
         element: <Venomancer></Venomancer>
     },
     {
-        path: "/about-me/Venator",
+        path: `${import.meta.env.BASE_URL}about-me/Venator`,
         element: <Venator></Venator>
     },
     {
-        path: "/profiles",
+        path: `${import.meta.env.BASE_URL}profiles`,
         element: <Profiles></Profiles>
     },
     {
-        path: "/options",
+        path: `${import.meta.env.BASE_URL}options`,
         element: <Options></Options>
     },
     {
-        path: "/credit",
+        path: `${import.meta.env.BASE_URL}credit`,
         element: <Credit></Credit>
     },
     {
-        path: "*",
+        path: `${import.meta.env.BASE_URL}*`,
         element: <ErrorPage></ErrorPage>
     }
 ];
