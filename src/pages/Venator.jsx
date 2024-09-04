@@ -6,13 +6,13 @@ export default function Venator({}) {
         "krita": "An artist tool to illustrate one's goals. But in the hands of Venator, it becomes a branding mark for his prey.",
         "capcut": "Venator's infamous hook that captures his victim's last moments before delivering the final cut.",
         "godot": "A strategem of Venator acted as tactic simulator, a means to foresee the endless possibilities of a hunter's wicked imagination.",
-        "audacity" : "Venator's boldness from perfecting his sense of hearing, allows him to confidently analyze his target's sound of movements, breathing, and heartbeat before striking fear into his prey."
+        "audacity" : "Venator's boldness from perfecting his sense of hearing. Confidently analyze his target's movements, breathing, and heartbeat before striking fear into his prey."
     }
 
     const skillName = {
         "" : "",
         "krita" : "Krita",
-        "capcut" : "Capcut",
+        "capcut" : "CapCut",
         "godot" : "Godot",
         "audacity" : "Audacity"
     }

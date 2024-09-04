@@ -16,6 +16,11 @@ body,
     font-family: "EB Garamond", serif;
 }
 
+/***********/
+/** MEDIA **/
+/***********/
+
+
 /**************/
 /** SUBTITLE **/
 /**************/
@@ -25,14 +30,18 @@ body,
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 20%; /* Adjust the height as needed */
-    background: linear-gradient(to bottom, 
-        rgba(0, 0, 0, 0),       /* Transparent at the top */
-        rgba(0, 0, 0, 0.6),   
-        rgba(0, 0, 0, 0.8)      /* Dark at the bottom */
+    height: 20%;
+    /* Adjust the height as needed */
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0),
+            /* Transparent at the top */
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.8)
+            /* Dark at the bottom */
         );
     z-index: 99;
-    pointer-events: none; /* Make the element non-interactable */
+    pointer-events: none;
+    /* Make the element non-interactable */
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -51,14 +60,19 @@ body,
 .subtitle {
     display: flex;
     text-align: center;
-    color: rgb(240,240,240);
+    color: rgb(240, 240, 240);
     font-size: calc(16px + 1vw);
     text-shadow: rgb(0, 0, 0) 1px 0px 0px, rgb(0, 0, 0) 0.540302px 0.841471px 0px, rgb(0, 0, 0) -0.416147px 0.909297px 0px, rgb(0, 0, 0) -0.989992px 0.14112px 0px, rgb(0, 0, 0) -0.653644px -0.756802px 0px, rgb(0, 0, 0) 0.283662px -0.958924px 0px, rgb(0, 0, 0) 0.96017px -0.279415px 0px;
-    user-select: none; /* Prevents text selection */
-    -webkit-user-select: none; /* For WebKit browsers */
-    -moz-user-select: none; /* For Mozilla browsers */
-    -ms-user-select: none; /* For Internet Explorer/Edge */
-    cursor: default; /* Shows default cursor (or you can specify a different cursor if needed) */
+    user-select: none;
+    /* Prevents text selection */
+    -webkit-user-select: none;
+    /* For WebKit browsers */
+    -moz-user-select: none;
+    /* For Mozilla browsers */
+    -ms-user-select: none;
+    /* For Internet Explorer/Edge */
+    cursor: default;
+    /* Shows default cursor (or you can specify a different cursor if needed) */
     transition: 0.5s;
 }
 
@@ -81,11 +95,16 @@ body,
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    user-select: none; /* Prevents text selection */
-    -webkit-user-select: none; /* For WebKit browsers */
-    -moz-user-select: none; /* For Mozilla browsers */
-    -ms-user-select: none; /* For Internet Explorer/Edge */
-    cursor: default; /* Shows default cursor (or you can specify a different cursor if needed) */
+    user-select: none;
+    /* Prevents text selection */
+    -webkit-user-select: none;
+    /* For WebKit browsers */
+    -moz-user-select: none;
+    /* For Mozilla browsers */
+    -ms-user-select: none;
+    /* For Internet Explorer/Edge */
+    cursor: default;
+    /* Shows default cursor (or you can specify a different cursor if needed) */
 }
 
 .error-page h1 {
@@ -255,7 +274,7 @@ body,
     color: rgb(255, 192, 96);
 }
 
-.menu-list .nav-link:active { 
+.menu-list .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -301,7 +320,8 @@ body,
     align-items: center;
 }
 
-.select-class, .arrows {
+.select-class,
+.arrows {
     flex: 1;
 }
 
@@ -345,7 +365,7 @@ body,
     color: rgb(255, 192, 96);
 }
 
-.arrows .nav-link:active { 
+.arrows .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -478,7 +498,8 @@ body,
     align-items: center;
 }
 
-.options-title, .options-return {
+.options-title,
+.options-return {
     display: flex;
     flex: 1;
 }
@@ -542,7 +563,7 @@ body,
     color: rgb(255, 192, 96);
 }
 
-.options-return .nav-link:active { 
+.options-return .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -555,7 +576,7 @@ body,
     display: flex;
 }
 
-.music-container > * {
+.music-container>* {
     margin: 8px;
 }
 
@@ -565,7 +586,7 @@ body,
 }
 
 .options-list {
-    font-size: calc(12px + 1vw);   
+    font-size: calc(12px + 1vw);
 }
 
 .slider-container {
@@ -573,13 +594,15 @@ body,
     align-items: center;
 }
 
-.slider-container > * {
+.slider-container>* {
     margin: 8px;
 }
 
-input[type="range"] { /* slider */
+input[type="range"] {
+    /* slider */
     appearance: none;
-    height: 4px; /* Set the height of the track */
+    height: 4px;
+    /* Set the height of the track */
     transition: 0.5s;
     background-color: rgb(240, 240, 240);
     opacity: 0.8;
@@ -594,13 +617,19 @@ input[type="range"]:hover {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none; /* Remove default appearance */
+    -webkit-appearance: none;
+    /* Remove default appearance */
     appearance: none;
-    width: 16px; /* Set the width of the thumb */
-    height: 16px; /* Set the height of the thumb */
-    background: rgb(255, 192, 96); /* Set the color of the thumb */
-    cursor: pointer; /* Change cursor to pointer */
-    border-radius: 50%; /* Make the thumb round */
+    width: 16px;
+    /* Set the width of the thumb */
+    height: 16px;
+    /* Set the height of the thumb */
+    background: rgb(255, 192, 96);
+    /* Set the color of the thumb */
+    cursor: pointer;
+    /* Change cursor to pointer */
+    border-radius: 50%;
+    /* Make the thumb round */
 }
 
 /*********************/
@@ -617,7 +646,8 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(160, 160, 160);
 }
 
-.character-sheet span, .character-return {
+.character-sheet span,
+.character-return {
     flex: 1;
     display: flex;
     align-items: center;
@@ -628,7 +658,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .character-sheet span {
     color: rgb(192, 192, 192);
-    font-size: calc(12px + 1vw);
+    font-size: calc(1px + 2vw);
     justify-content: center;
     display: flex;
     align-items: center;
@@ -680,7 +710,7 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(255, 192, 96);
 }
 
-.character-return .nav-link:active { 
+.character-return .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -696,7 +726,8 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: row;
 }
 
-.character-info, .character-visual {
+.character-info,
+.character-visual {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -714,24 +745,28 @@ input[type="range"]::-webkit-slider-thumb {
 
 .character-visual {
     flex: 3;
-    width: 100%; /* Adjust as needed */
-    height: 100%; /* Adjust as needed */
-    overflow: hidden; /* Ensures that anything outside the container is not visible */
+    width: 100%;
+    /* Adjust as needed */
+    height: 100%;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Ensures that anything outside the container is not visible */
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .character-portrait {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .character-info {
     flex-direction: column;
 }
 
-.skill-text, .skill-icon {
+.skill-text,
+.skill-icon {
     height: 50%;
 }
 
@@ -752,9 +787,12 @@ input[type="range"]::-webkit-slider-thumb {
 .skill-icon img {
     cursor: pointer;
     user-select: none;
-    -webkit-user-select: none; /* For Safari */
-    -moz-user-select: none; /* For Firefox */
-    -ms-user-select: none; /* For Internet Explorer and Edge */
+    -webkit-user-select: none;
+    /* For Safari */
+    -moz-user-select: none;
+    /* For Firefox */
+    -ms-user-select: none;
+    /* For Internet Explorer and Edge */
     width: 20%;
     padding: 2.5%;
     transition: 0.5s;
@@ -769,7 +807,8 @@ input[type="range"]::-webkit-slider-thumb {
 .skill-icon img.chosen {
     width: 25%;
     padding: 0;
-    opacity: 1;;
+    opacity: 1;
+    ;
 }
 
 /**************/
@@ -786,7 +825,8 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(160, 160, 160);
 }
 
-.profiles span, .profiles-return {
+.profiles span,
+.profiles-return {
     flex: 1;
     display: flex;
     align-items: center;
@@ -849,7 +889,7 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(255, 192, 96);
 }
 
-.profiles-return .nav-link:active { 
+.profiles-return .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -892,9 +932,11 @@ input[type="range"]::-webkit-slider-thumb {
     0% {
         transform: scale(1);
     }
+
     50% {
         transform: scale(1.5);
     }
+
     100% {
         transform: scale(1);
     }
@@ -932,7 +974,8 @@ input[type="range"]::-webkit-slider-thumb {
     align-items: center;
 }
 
-.credit-title, .credit-return {
+.credit-title,
+.credit-return {
     display: flex;
     flex: 1;
 }
@@ -955,7 +998,7 @@ input[type="range"]::-webkit-slider-thumb {
     flex-direction: column;
     margin: 0;
     padding: 0;
-    font-size: calc(12px + 1vw);  
+    font-size: calc(10px + 1vw);
 }
 
 .credit-menu .credit-return {
@@ -997,7 +1040,7 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(255, 192, 96);
 }
 
-.credit-return .nav-link:active { 
+.credit-return .nav-link:active {
     background-color: rgba(255, 128, 0, 0.4);
     border-radius: 100%;
     box-shadow: 0 0 10px 10px rgb(255, 128, 0, 0.4);
@@ -1006,7 +1049,7 @@ input[type="range"]::-webkit-slider-thumb {
     color: rgb(255, 192, 96);
 }
 
-.credit-list ul{
+.credit-list ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1017,5 +1060,5 @@ input[type="range"]::-webkit-slider-thumb {
 
 .credit-list li {
     list-style: none;
-    font-size: calc(8px + 1vw); 
+    font-size: calc(6px + 1vw);
 }

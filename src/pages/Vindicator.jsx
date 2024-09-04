@@ -6,7 +6,7 @@ export default function Vindicator() {
         "html" : "Endowed with the Mighty Lord's sacred knowledge, this holy text blesses Vindicator and his allies the essential foundation for any crusade.",
         "css": "Deploy stunning visual effects that captivate and mesmerize all who behold them, rendering adversaries awestruck.",
         "js": "A knight's masterful technique to swiftly respond with intricate algorithms, executing commands with the speed and precision of a jousting blade.",
-        "react": "Empowers Vindicator to protect his allies with lightning-fast responses and unmatched adaptability. Allows Vindicator to dynamically adjusts his tactics to counter any adversary."        
+        "react": "Empowers Vindicator to protect his allies with lightning-fast responses and unmatched adaptability. Dynamically adjusts his tactics to counter any adversary."        
     };
 
     const skillName = {
