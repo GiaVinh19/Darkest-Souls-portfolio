@@ -17,5 +17,4 @@
 - Music now randomized whenever opening the website
 
 ## Demo:
-Click the link below to see a live demo:  
 [Darkest Souls Portfolio](https://giavinh19.github.io/darkest-souls-portfolio/)
