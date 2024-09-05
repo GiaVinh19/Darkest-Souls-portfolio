@@ -42,7 +42,7 @@ const routes = [
         element: <Credit></Credit>
     },
     {
-        path: `${import.meta.env.BASE_URL}error`,
+        path: `${import.meta.env.BASE_URL}*`,
         element: <ErrorPage></ErrorPage>
     }
 ];

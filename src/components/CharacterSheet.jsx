@@ -27,7 +27,7 @@ export default function CharacterSheet({ heroClass, skill01, skill02, skill03, s
                     <video
                         className="character-portrait"
                         draggable="false"
-                        src={`${import.meta.env.BASE_URL}image/${heroClass}/${chosenSkill}.webm`}
+                        src={`${import.meta.env.BASE_URL}image/${heroClass}/${chosenSkill ? chosenSkill : 'idle'}.webm`}
                         autoPlay
                         preload="auto"
                         loop

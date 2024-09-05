@@ -68,7 +68,7 @@ export default function Menu() {
                 <img className={"menu-title"} src={`${import.meta.env.BASE_URL}image/Menu/menu-title.webp`} />
                 <div className={`menu-start ${menuOpen ? 'open' : 'close'}`}>
                     <p onClick={() => openMenuSelect()}>
-                    {isPortrait ? "Please rotate to landscape mode for best experience" : "Click Here to Start"}
+                    {isPortrait ? "Rotate to landscape mode for best experience" : "Click Here to Start"}
                     </p>
                 </div>
                 <ul className={`menu-list ${menuOpen ? 'open' : 'close'}`}>

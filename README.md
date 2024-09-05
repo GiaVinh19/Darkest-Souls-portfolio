@@ -1,8 +1,21 @@
-# React + Vite
+# Darkest Souls Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Built with**: React + Vite
 
-Currently, two official plugins are available:
+## Softwares Used:
+- **Krita** - Image Editor
+- **Audacity** - Audio Editor
+- **CapCut** - Animation + Video Editor
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Change Log:
+### v1.00
+- Initial Release
+
+### v1.01
+- Fixed idle animation not loading
+- Added additional music in Options Menu
+- Music now randomized whenever opening the website
+
+## Demo:
+Click the link below to see a live demo:  
+[Darkest Souls Portfolio](https://giavinh19.github.io/darkest-souls-portfolio/)
