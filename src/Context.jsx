@@ -4,9 +4,9 @@ const Context = createContext();
 
 export const ContextProvider = ({ children }) => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const [musicVolume, setMusicVolume] = useState(0.5);
-    const [voiceVolume, setVoiceVolume] = useState(0.5);
-    const [sfxVolume, setSfxVolume] = useState(0.5);
+    const [musicVolume, setMusicVolume] = useState(0.2);
+    const [voiceVolume, setVoiceVolume] = useState(0.2);
+    const [sfxVolume, setSfxVolume] = useState(0.2);
     const [musicFile, setMusicFile ] = useState("");
     const [voiceFile, setVoiceFile ] = useState("");
     const [playMusic, setPlayMusic] = useState(() => () => { });

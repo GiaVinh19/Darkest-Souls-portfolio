@@ -2,10 +2,10 @@ import CharacterSheet from "../components/CharacterSheet";
 
 export default function Venomancer() {
     const skillText = {
-        "" : "The Backend of Vinh's Vanguard. As the mastermind of the operation, Venomancer lurks in the shadow and secretly deals data per session with the specialization of Python, Flask, SQL-Alchemy, and CRUD.",
-        "python": "Venomancer's loyal pet that provide the foundation ingredients for any alchemist",
+        "" : "Vinh the Venomancer. The Backend of Vinh's Vanguard. As the mastermind of the operation, Venomancer lurks in the shadow and secretly deals data per session with the specialization of Python, Flask, SQL-Alchemy, and CRUD.",
+        "python": "Venomancer's loyal pet that provide the fundamental ingredients for any alchemist.",
         "flask": "A vessel to hold the essential ingredients, libraries, and dependencies of backend arsenal.",
-        "sql-alchemy": "A mapping tool to illustrate the relationship and interaction among various tables of ingredients",
+        "sql-alchemy": "A mapping tool to illustrate the relationship and interaction among various tables of ingredients.",
         "crud" : "The alchemical prowess to masterfully manipulate ingredients into any shape and form."
     };
 

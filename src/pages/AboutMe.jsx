@@ -4,9 +4,9 @@ import NavButton from "../components/NavButton";
 
 export default function AboutMe() {
 
-    const Frontend = "The Frontend of Vinh's Vanguard. As the leader of the campaign, Vindicator plans and visualizes his victory through the mastery of HTML, CSS, JS, and React."
-    const Backend = "The Backend of Vinh's Vanguard. As the mastermind of the operation, Venomancer lurks in the shadow and secretly deals data over time with the specialization of Python, Flask, SQL-Alchemy, and CRUD."
-    const Generalist = "The Generalist of Vinh's Vanguard. As the artisan of all trades, Venator adapts to various challenges of visual, audio and game design by his versatility in Audacity, Godot, Krita, and Capcut."
+    const Frontend = "Vinh the Vindicator. The Frontend of Vinh's Vanguard. As the leader of the campaign, Vindicator plans and visualizes his victory through the mastery of HTML, CSS, JS, and React."
+    const Backend = "Vinh the Venomancer. The Backend of Vinh's Vanguard. As the mastermind of the operation, Venomancer lurks in the shadow and secretly deals data over time with the specialization of Python, Flask, SQL-Alchemy, and CRUD."
+    const Generalist = "Vinh the Venator. The Generalist of Vinh's Vanguard. As the artisan of all trades, Venator adapts to various challenges of visual, audio and game design by his versatility in Audacity, Godot, Krita, and Capcut."
 
     const classDescription = {"Vindicator" : Frontend, "Venomancer" : Backend, "Venator" : Generalist};
 
